@@ -42,19 +42,11 @@ using namespace std;
 #define REP(i, a, b)      for(int i=a;i<b;i++)
 #define loop(i,n)       for(int i=0;i<n;i++)
 
-/*
-template <class T> T gcd(T a,T b){ if(b == 0) return a; return gcd( b,a % b ); }
-template <class T> T lcm(T a, T b ){ return ( a * b ) / gcd( a,b ); }
-template<class T> string ToString(const T &x){ stringstream s; s << x; return s.str(); }
-template<class T> int ToInteger(const T &x){ stringstream s; s << x; int r; s >> r; return r; }
-*/
 
 const int fx[] = { -1, 1, 0, 0 }; /// 4 side moves.
 const int fy[] = { 0, 0, -1, 1 };
 const int dx[] = { 1, 1, 0, -1, -1, -1, 0, 1 }; /// 8 side moves.
 const int dy[] = { 0, 1, 1, 1, 0, -1, -1, -1 };
-const int kx[] = { 1, 1, -1, -1, 2, 2, -2, -2 }; /// Knight Moves.
-const int ky[] = { 2, -2, 2, -2, 1, -1, 1, -1 };
 
 typedef  long long int            ll;
 typedef  map<string,int>          msi;
@@ -71,19 +63,6 @@ typedef  vector<string> 	      vs;
 typedef  vector<char>	          vc;
 typedef  vector<bool>             vb;
 typedef  vector< pii >             vii;
-
-template<class T1> void print(T1 e1)
-{
-    cout << e1 << endl;
-}
-template<class T1,class T2> void print(T1 e1, T2 e2)
-{
-    cout << e1 << " " << e2 << endl;
-}
-template<class T1,class T2,class T3> void print(T1 e1, T2 e2, T3 e3)
-{
-    cout << e1 << " " << e2 << " " << e3 << endl;
-}
 
 #define SF                    scanf
 #define PF                    printf
